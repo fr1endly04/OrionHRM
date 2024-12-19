@@ -1,0 +1,22 @@
+{
+  "name": "orionhrm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test --project=chromium 'tests/EmployeeAndECommerceTestSuite.spec.js' -g 'QA-Automation'",
+    "webTests": "npx playwright test --grep @Web",
+    "APITests": "npx playwright test --grep @API",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
